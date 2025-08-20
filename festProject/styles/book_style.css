@@ -1,0 +1,106 @@
+:root {
+    --main-theme-color: #14203D;
+    --frame_theme_color: #c21717;
+    --rest_shadow_color: #c21717;
+    --frame_shadow_color: rgba(44, 39, 39, 0.15);
+    --frame_desc_color: #242424;
+    --rest_color: #fff;
+    --rest_btn_color: #c21717;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.theme {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    color: var(--main-theme-color);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.frames {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    margin-bottom: 100px;
+}
+
+.frame {
+    border-radius: 20px;
+    height: 420px;
+    box-shadow: 0 10px 25px 0 var(--frame_shadow_color);
+}
+
+.frame_info {
+    padding: 30px;
+}
+
+.frame_theme {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    text-align: center;
+    color: var(--frame_theme_color);
+    margin-bottom: 10px;
+}
+
+.frame_desc {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 117%;
+    text-align: center;
+    color: var(--frame_desc_color);
+    margin-bottom: 34px;
+}
+
+.frame a {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--frame_desc_color);
+}
+
+.restaurant {
+    border-left: 10px solid var(--rest_shadow_color);
+    border-radius: 20px;
+    width: 1200px;
+    height: 400px;
+    background-image: url("../images/restaurant.png");
+    margin-bottom: 100px;
+}
+
+.restaurant_theme {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 118%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--rest_color);
+}
+
+.restaurant_descr {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 147%;
+    text-align: center;
+    color: var(--rest_color);
+}
+
+.restaurant_btn {
+    border-radius: 60px;
+    width: 220px;
+    height: 56px;
+    background: var(--rest_btn_color);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    color: var(--rest_color);
+}
