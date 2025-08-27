@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --frame-bg-color: rgba(174, 159, 103, 0.9);
+    --frame-color: #ffffff;
+    --frame-text-color: rgba(255, 255, 255, 0.7);
+}
+
+main {
+    background: url("../images/culture.png") no-repeat center;
+    background-size: cover;
+    min-height: calc(100vh - 80px - 152px);
+    padding: 120px;
+}
+
+.frame  {
+    margin-top: 15px;
+    background: var(--frame-bg-color);
+    width: 420px;
+    height: 500px;
+    color: var(--frame-color);
+    padding: 30px;
+}
+
+.frame-title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.frame-theme {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+}
+
+.frame-text {
+    color: var(--frame-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 40px;
+}
+
+.frame-btn {
+    color: var(--frame-text-color);
+    width: 150px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    border: 1px solid var(--frame-text-color);
+    border-radius: 60px;
+    background-color: rgba(28,28,28,0)
+}
